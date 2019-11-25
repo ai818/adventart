@@ -1,6 +1,23 @@
 class HomeController < ApplicationController
 
   def index
-    render html: "ここに紹介ページをかきます"
+  end
+
+  def show
+  end
+
+  def new
+  end
+
+  def create
+    render :new
+  end
+
+  def edit
+
+  end
+
+  def update
+    render :edit
   end
 end
