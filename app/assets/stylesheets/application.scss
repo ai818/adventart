@@ -1,0 +1,47 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ */
+
+ // Custom bootstrap variables must be set or imported *before* bootstrap.
+@import "bootstrap";
+
+blockquote {
+  position: relative;
+  padding: 30px 15px 8px 15px;
+  box-sizing: border-box;
+  font-style: italic;
+  color: #555;
+
+  &:before{
+      display: inline-block;
+      position: absolute;
+      top: 5px;
+      left: 3px;
+      content: "“";
+      font-family: sans-serif;
+      color: #cfcfcf;
+      font-size: 90px;
+      line-height: 1;
+  }
+  p {
+      padding: 0;
+      margin: 10px 0;
+      line-height: 1.7;
+  }
+  cite {
+      display: block;
+      text-align: right;
+      color: #888888;
+      font-size: 0.9em;
+  }
+}
